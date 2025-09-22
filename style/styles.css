@@ -189,50 +189,47 @@ body {
 
 /* ===== СТРАНИЦА ТОВАРОВ ===== */
 .products-grid {
-    display: grid; /* Сетка */
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматическая подгонка карточек */
     gap: 30px; /* Расстояние между карточками */
     margin-top: 30px; /* Отступ сверху */
 }
 
 .product-card {
-    background: white; /* Белый фон карточки */
-    border-radius: 12px; /* Скругленные углы */
-    padding: 20px; /* Внутренние отступы */
-    text-align: center; /* Выравнивание по центру */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Легкая тень */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация */
+    background: white;
+    border-radius: 12px; 
+    padding: 20px; 
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* Поднятие при наведении */
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15); /* Более сильная тень */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .product-image {
-    width: 100%; /* Растягивание по ширине */
-    height: 200px; /* Фиксированная высота */
-    object-fit: cover; /* Сохранение пропорций */
-    border-radius: 10px; /* Скругление изображения */
-    margin-bottom: 15px; /* Отступ снизу */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-bottom: 15px;
 }
 
 .product-name {
-    font-size: 20px; /* Крупный текст */
-    font-weight: 600; /* Жирный */
-    color: #2c3e50; /* Тёмный */
-    margin: 10px 0; /* Отступы */
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 10px 0;
 }
 
 .product-price {
-    font-size: 16px; /* Размер цены */
-    color: #667eea; /* Синий акцент */
-    font-weight: 500;
+    color: #667eea;
 }
 
 /* ===== СТРАНИЦА КОНТАКТОВ ===== */
 .contacts-container {
-    max-width: 700px;
     margin: 0 auto;
     padding: 30px;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -242,7 +239,6 @@ body {
 }
 
 .contact-info {
-    font-size: 18px;
     color: #2c3e50;
     margin: 15px 0;
 }
@@ -255,8 +251,6 @@ body {
     color: white;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
-    font-weight: 600;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
     transition: all 0.3s ease;
@@ -264,14 +258,14 @@ body {
 
 .contact-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
+    box-shadow: 0 6px 20px rgba(79, 172, 254, 1);
 }
 
 /* ===== СТРАНИЦА НОВОСТЕЙ ===== */
 .news-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -281,11 +275,6 @@ body {
     padding: 25px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     border-left: 4px solid #667eea;
-    transition: transform 0.3s ease;
-}
-
-.news-card:hover {
-    transform: translateX(5px);
 }
 
 .news-title {
