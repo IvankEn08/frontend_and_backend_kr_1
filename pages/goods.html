@@ -1,44 +1,64 @@
 <!DOCTYPE html>
-<html lamg = "ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа. Товары</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
-    <body>
-        <div class="page-container">
-        <div class="header">Хэдер</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-             <div class="content">
-                <h2 class="section-title">Наши товары</h2>
-                <div class="products-grid">
-                    <div class="product-card">
-                        <img class="product-image" src="../images/goods1.jpg" alt="Фото товара 1">
-                        <h3 class="product-name">Товар 1</h3>
-                        <p class="product-price">$20000</p>
-                    </div>
-                    <div class="product-card">
-                        <img class="product-image" src="../images/goods2.jpg" alt="Фото товара 2">
-                        <h3 class="product-name">Товар 2</h3>
-                        <p class="product-price">$15000</p>
-                    </div>
-                    <div class="product-card">
-                        <img class="product-image" src="../images/goods3.jpg" alt="Фото товара 3">
-                        <h3 class="product-name">Товар 3</h3>
-                        <p class="product-price">$400000</p>
-                    </div>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="../style/styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Шапка -->
+        <header class="header">
+            <h1>Очень крутой Хэдер</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Контент -->
+        <main class="content">
+            <section class="experience-section">
+                <h1 class="section-title">Каталог товаров</h1>
+                <div class="experience-grid">
+
+                    <article class="experience-card">
+                        <img src="../images/goods1.jpg" alt="Товар 1" width="200">
+                        <h3 class="experience-title">Товар 1</h3>
+                        <p class="experience-desc">Не продаю, чисто хвастаюсь что он есть</p>
+                        <p class="experience-desc">Цену сказали поставить, поэтому $10000000000000000000000</p>
+                    </article>
+
+                    <article class="experience-card">
+                        <img src="../images/goods2.jpg" alt="Товар 2" width="200">
+                        <h3 class="experience-title">Товар 2</h3>
+                        <p class="experience-desc">Красивый, быстрый, но не меткий</p>
+                        <p class="experience-desc">$22500</p>
+                    </article>
+
+                    <article class="experience-card">
+                        <img src="../images/goods3.jpg" alt="Товар 3" width="200">
+                        <h3 class="experience-title">Товар 3</h3>
+                        <p class="experience-desc">Медленный. Ульта: не видно в темноте</p>
+                        <p class="experience-desc">$430000</p>
+                    </article>
+
                 </div>
-            </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            Не менее крутой Футер
+        </footer>
     </div>
-    <div class="footer">Футер</div>
 </body>
 </html>

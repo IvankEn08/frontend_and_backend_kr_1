@@ -1,3 +1,4 @@
+
 /* ===== БАЗОВЫЕ СТИЛИ ===== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт для лучшей читаемости */
@@ -9,11 +10,19 @@ body {
 
 /* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
 .page-container {
-    max-width: 1200px; /* Максимальная ширина контента */
-    margin: 0 auto; /* Центрирование контейнера по горизонтали */
-    background: white; /* Белый фон для основного содержимого */
-    min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
-    box-shadow: 0 0 30px rgba(0,0,0,0.1); /* Легкая тень вокруг всего контента */
+ max-width: 1200px;
+ margin: 0 auto;
+ background: white;
+ min-height: 100vh;
+ box-shadow: 0 0 30px rgba(0,0,0,0.1);
+ /* Новое: Сеточный макет для семантических областей */
+ display: grid;
+ grid-template-rows: auto auto 1fr auto;
+ grid-template-areas:
+ "header"
+ "nav"
+ "main"
+ "footer";
 }
 
 /* ===== ШАПКА ===== */
@@ -25,12 +34,14 @@ body {
     font-size: 28px; /* Размер шрифта */
     font-weight: 300; /* Легкое начертание шрифта */
     letter-spacing: 2px; /* Расстояние между буквами */
+     grid-area: header;
 }
 
 /* ===== НАВИГАЦИЯ ===== */
 .nav {
     background: #2c3e50; /* Темно-синий фон навигации */
     padding: 20px 0; /* Вертикальные отступы */
+    grid-area: nav;
 }
 
 .nav-list {
@@ -60,11 +71,14 @@ body {
     transform: translateY(-2px); /* Легкое поднятие элемента при наведении */
 }
 
+
+
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
-.content {
+main.content {
     padding: 40px; /* Внутренние отступы контента */
     max-width: 900px; /* Максимальная ширина контента */
     margin: 0 auto; /* Центрирование контента */
+    grid-area: main;
 }
 
 /* ===== ГЛАВНАЯ СТРАНИЦА ===== */
@@ -114,6 +128,14 @@ body {
 }
 
 /* ===== НАВЫКИ ===== */
+
+.skills-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+ gap: 15px;
+ margin: 20px 0;
+}
+
 .skills-container {
     display: flex; /* Горизонтальное расположение навыков */
     justify-content: center; /* Выравнивание по центру */
@@ -151,6 +173,12 @@ body {
     font-weight: 300; /* Легкое начертание шрифта */
 }
 
+.experience-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 20px;
+}
+
 .experience-card {
     background: white; /* Белый фон карточки */
     padding: 25px; /* Внутренние отступы */
@@ -159,6 +187,10 @@ body {
     box-shadow: 0 5px 20px rgba(0,0,0,0.08); /* Легкая тень */
     border-left: 4px solid #667eea; /* Синяя полоса слева */
     transition: transform 0.3s ease; /* Плавная анимация трансформации */
+    width: 250px;
+    display: flex;
+        flex-direction: column;
+    align-items: center;
 }
 
 .experience-card:hover {
@@ -187,111 +219,21 @@ body {
     margin-top: 50px; /* Отступ сверху */
 }
 
-/* ===== СТРАНИЦА ТОВАРОВ ===== */
-.products-grid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Автоматическая подгонка карточек */
-    gap: 30px; /* Расстояние между карточками */
-    margin-top: 30px; /* Отступ сверху */
-}
+@media (max-width: 768px) {
+ .nav-list {
+ flex-direction: column;
+ gap: 10px;
+ }
 
-.product-card {
-    background: white;
-    border-radius: 12px; 
-    padding: 20px; 
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-}
+ .skills-grid {
+ grid-template-columns: 1fr;
+ }
 
-.product-card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
+ .experience-grid {
+ grid-template-columns: 1fr;
+ }
 
-.product-image {
-    width: 100%; 
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 10px; 
-    margin-bottom: 15px;
-}
-
-.product-name {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2c3e50;
-    margin: 10px 0;
-}
-
-.product-price {
-    color: #667eea;
-}
-
-/* ===== СТРАНИЦА КОНТАКТОВ ===== */
-.contacts-container {
-    margin: 0 auto;
-    padding: 30px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 15px;
-    border-left: 5px solid #667eea;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-.contact-info {
-    color: #2c3e50;
-    margin: 15px 0;
-}
-
-.contact-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.3);
-    transition: all 0.3s ease;
-}
-
-.contact-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(79, 172, 254, 1);
-}
-
-/* ===== СТРАНИЦА НОВОСТЕЙ ===== */
-.news-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.news-card {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    border-left: 4px solid #667eea;
-}
-
-.news-title {
-    font-size: 22px;
-    color: #2c3e50;
-    margin-bottom: 8px;
-    font-weight: 600;
-}
-
-.news-meta {
-    font-size: 14px;
-    color: #7f8c8d;
-    margin-bottom: 15px;
-}
-
-.news-text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #2c3e50;
+ main.content {
+ padding: 20px;
+ }
 }

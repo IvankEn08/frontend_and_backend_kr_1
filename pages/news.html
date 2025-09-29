@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Семестровая работа. Новости</title>
-        <link rel="stylesheet" href="../style/styles.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
     <div class="page-container">
-    <div class="header">Хэдер</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-    <div class="content">
-            <div class="news-container">
-                <div class="news-card">
-                    <h2 class="news-title">Новость 1</h2>
-                    <p class="news-meta">01.01.2025 12:00 И. А. Гладких</p>
-                    <p class="news-text">Срочно! Ваня пытался приготовить макароны без воды — теперь в районе объявлен режим ЧС.</p>
+        <!-- Шапка -->
+        <header class="header">
+            <h1>Очень крутой Хэдер</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Контент -->
+        <main class="content">
+            <section class="experience-section">
+                <h1 class="section-title">Новости</h1>
+                <div class="experience-grid">
+
+                    <article class="experience-card">
+                        <h2 class="experience-title">Срочно: новостей нет</h2>
+                        <p class="experience-desc"><em>22 сентября 2025 — Автор: 👤 я любимый</em></p>
+                        <p class="experience-desc">
+                            а вот не знаю я что написать, нет новостей никаких
+                        </p>
+                    </article>
+
+                    <article class="experience-card">
+                        <h2 class="experience-title">"Я буду воровать новости!!!"</h2>
+                        <p class="experience-desc"><em>19 сентября 2025 — Автор: я жоский</em></p>
+                        <p class="experience-desc">Следующая новость будет стырена у одного из моих одногруппников</p>
+                    </article>
+
+                    <article class="experience-card">
+                        <h2 class="experience-title">Я очень вкусно покушал во «Вкусно и точка» и упал с самоката</h2>
+                        <p class="experience-desc"><em>22 сентября 2025 — Автор: тайный агент</em></p>
+                        <p class="experience-desc">ну он дурак ездить не умеет. я тоже очень вкусно покушал и никуда не падал</p>
+                    </article>
+
                 </div>
-                <div class="news-card">
-                    <h2 class="news-title">Новость 2</h2>
-                    <p class="news-meta">01.01.2025 12:00 И. А. Гладких</p>
-                    <p class="news-text">Эксклюзив! Молодой человек из Москвы изобрёл новый вид спорта: проспал тренажёрный зал, но при этом похудел морально.</p>
-                </div>
-                <div class="news-card">
-                    <h2 class="news-title">Новость 3</h2>
-                    <p class="news-meta">01.01.2025 12:00 И. А. Гладких</p>
-                    <p class="news-text">Сенсация! Курьер Ваня умудрился доставить заказ самому себе — теперь его считают лучшим работником месяца и одновременно клиентом года.</p>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            Не менее крутой Футер
+        </footer>
     </div>
-    <div class="footer">Футер</div>
 </body>
 </html>

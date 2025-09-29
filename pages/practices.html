@@ -1,39 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Семестровая работа. Практики</title>
+    <title>Практики</title>
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
     <div class="page-container">
-    <div class="header">Хэдер</div>
-            <div class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                    <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li> 
-                    <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </div>
-    <div class="content">
-            <div class="news-container">
-                <h2>Практики, пройденные мной</h2>
-                <div class="news-card">
-                    <h2 class="news-title">Практика 1</h2>
-                    <img src="../images/practice1.jpg" alt="" width="400">
-                    <p class="news-text">124 часа</p>
+        <!-- Шапка -->
+        <header class="header">
+            <h1>Очень крутой Хэдер</h1>
+        </header>
+
+        <!-- Навигация -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <!-- Контент -->
+        <main class="content">
+            <section class="experience-section">
+                <h1 class="section-title">Практики пройденные мной</h1>
+                <div class="experience-grid">
+
+                    <article class="experience-card">
+                        <h2 class="experience-title">Практика по ничегонеделанию</h2>
+                        <img src="../images/practice1.jpg" alt="Практика по битью баклуш" width="300">
+                        <p class="experience-desc">168372 часов</p>
+                    </article>
+
+                    <article class="experience-card">
+                        <h2 class="experience-title">Практика по многовсегоделанию</h2>
+                        <img src="../images/practice2.jpg" alt="Практика по домоседству" width="300">
+                        <p class="experience-desc"><em>2 часа</em></p>
+                    </article>
+
                 </div>
-                <div class="news-card">
-                    <h2 class="news-title">Практика 2</h2>
-                    <img src="../images/practice2.jpg" alt=""width="400">
-                    <p class="news-text">256 часов</p>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            Не менее крутой Футер
+        </footer>
     </div>
-    <div class="footer">Футер</div>
 </body>
 </html>
